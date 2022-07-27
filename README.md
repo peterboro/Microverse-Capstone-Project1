@@ -11,6 +11,8 @@ I built this website with a mobile-first approach, applying fluid design princip
 
 Check out my video presentation [here](https://www.loom.com/share/33182d5f32f2450598a2c0cc4212f1e2)
 
+[LIVE DEMO](https://peterboro.github.io/Microverse-Capstone-Project1/)
+
 ## Built with
 
 - HTML 
