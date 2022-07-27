@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  --color-dark: #272a31;
+  --color-coral: #ec5242;
+  --text-coral: #f44c06;
+  --color-white: #fff;
+  --bg-gray: #d3d3d3;
+  --text-gray: #909090;
+  --text-darkgray: #565656;
+}
+
+.banner {
+  min-height: 50vh;
+  background-color: rgb(211, 211, 211, 0.8);
+  background-size: cover;
+}
+
+.banner::before {
+  content: "";
+  background: url("./Images/peopleskating3.png");
+  background-size: cover;
+  width: 100%;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 57vh;
+  position: absolute;
+  z-index: -1;
+}
+
+.bannercontent {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+}
+
+.bannergreeting {
+  margin: 20px;
+  color: var(--text-coral);
+}
+
+.bannerdesc {
+  width: 80%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left: 10%;
+  border-style: solid;
+  border-color: var(--bg-gray);
+  background-color: var(--color-white);
+}
+
+.bcontactinfo {
+  width: 60%;
+  margin-left: 20%;
+}
+
+.bannercontent h4 {
+  font-weight: bold;
+  font-family: "lato", sans-serif;
+  text-decoration: underline;
+}
+
+.scontainer {
+  margin: 30px;
+}
+
+.sheading {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+}
+
+.sdesc {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  margin: 30px;
+  padding: 20px;
+}
+
+.scontainer img {
+  width: 60%;
+  border-style: solid;
+  border-color: var(--bg-gray);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.blogo {
+  margin-left: 20%;
+
+  /* width: 60%; */
+  width: 200px;
+  height: 500px;
+}
+
+.blogo1 {
+  margin-left: 20%;
+  width: 60%;
+}
+
+hr {
+  color: var(--bg-gray);
+}
+
+.past-event-section {
+  border-top: 1.4px solid var(--color-lightgrey);
+  background-color: var(--color-white);
+  padding: 2rem 5%;
+}
+
+.past-event-sectio .sec-title {
+  color: var(--color-black);
+}
+
+.past-event-section p {
+  max-width: none;
+}
+
+.past-events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.past-events li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35vw;
+  height: 25vw;
+  box-shadow: inset -100vw -100vh #ec534280;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: box-shadow 0.45s, transform 0.45s;
+}
+
+.past-events li:first-child {
+  background-image: url('./Images/skatecon.png');
+  background-size: cover;
+}
+
+.past-events li:last-child {
+  background-image: url('./Images/skatecon2021.png');
+  background-size: cover;
+}
+
+.past-events li:hover {
+  box-shadow: unset;
+  transform: scale(1.025);
+}
+
+.past-events li h3 {
+  position: absolute;
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--color-white);
+}
+
+.past-events li h3 span {
+  display: block;
+  font-size: 1.5rem;
+}
+
+.partner-section .sec-title {
+  color: var(--color-lightgrey);
+}
+
+@media (max-width: 500px) {
+  .past-events li h3 {
+    font-size: 1.5rem;
+    color: var(--color-white);
+  }
+
+  .past-events li h3 span {
+    display: block;
+    font-size: 1rem;
+  }
+}
+
+.bfooter {
+  background-color: var(--text-darkgray);
+}
+
+.bfootertext {
+  color: var(--color-white);
+}
+
+@media only screen and (min-width: 768px) {
+  .bannercontent {
+    padding: 30px;
+  }
+
+  .bannergreeting {
+    padding: 10px;
+  }
+
+  .bcontactinfo {
+    padding: 10px;
+  }
+}
